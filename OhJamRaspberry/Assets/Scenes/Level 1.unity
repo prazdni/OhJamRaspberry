@@ -547,6 +547,21 @@ MonoBehaviour:
   - {fileID: 1331610255}
   - {fileID: 791757562}
   - {fileID: 2107039482}
+  - {fileID: 479667650}
+  - {fileID: 505397772}
+  - {fileID: 1212372677}
+  - {fileID: 1839306787}
+  - {fileID: 1287243384}
+  - {fileID: 1916049361}
+  - {fileID: 140883031}
+  - {fileID: 1574215537}
+  - {fileID: 1389759804}
+  - {fileID: 1340937768}
+  - {fileID: 650991709}
+  - {fileID: 102835605}
+  - {fileID: 1027873878}
+  - {fileID: 1226050466}
+  - {fileID: 704731582}
 --- !u!61 &82550131
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -705,6 +720,21 @@ MonoBehaviour:
   - {fileID: 384707282}
   - {fileID: 259617204}
   - {fileID: 2136964390}
+  - {fileID: 2053458389}
+  - {fileID: 2112654410}
+  - {fileID: 209683769}
+  - {fileID: 1473928362}
+  - {fileID: 1210705125}
+  - {fileID: 1136024197}
+  - {fileID: 1780103322}
+  - {fileID: 1785973501}
+  - {fileID: 700008958}
+  - {fileID: 1306638161}
+  - {fileID: 1134063150}
+  - {fileID: 1630816186}
+  - {fileID: 1960975323}
+  - {fileID: 423814825}
+  - {fileID: 295068442}
 --- !u!61 &102171792
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -977,7 +1007,22 @@ MonoBehaviour:
   _points:
   - {fileID: 261937105}
   - {fileID: 1683847139}
-  - {fileID: 76097424}
+  - {fileID: 1617296}
+  - {fileID: 283078320}
+  - {fileID: 1158984713}
+  - {fileID: 1877831437}
+  - {fileID: 665251390}
+  - {fileID: 826053722}
+  - {fileID: 1769497981}
+  - {fileID: 306597685}
+  - {fileID: 569509411}
+  - {fileID: 1274189913}
+  - {fileID: 1877459322}
+  - {fileID: 894491363}
+  - {fileID: 1673602410}
+  - {fileID: 1167865257}
+  - {fileID: 28010706}
+  - {fileID: 1512152280}
 --- !u!61 &137892230
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1576,7 +1621,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306597684}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.45, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3806,6 +3851,20 @@ MonoBehaviour:
   - {fileID: 2122100572}
   - {fileID: 1238164974}
   - {fileID: 381099896}
+  - {fileID: 974054235}
+  - {fileID: 996248796}
+  - {fileID: 1497418881}
+  - {fileID: 602013315}
+  - {fileID: 1805471356}
+  - {fileID: 1078219004}
+  - {fileID: 2010904235}
+  - {fileID: 876351317}
+  - {fileID: 699476994}
+  - {fileID: 324811210}
+  - {fileID: 226085795}
+  - {fileID: 761667286}
+  - {fileID: 471128164}
+  - {fileID: 1132177421}
 --- !u!61 &856295300
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5082,6 +5141,12 @@ MonoBehaviour:
   - {fileID: 805892184}
   - {fileID: 493812709}
   - {fileID: 1789899353}
+  - {fileID: 385744859}
+  - {fileID: 76884958}
+  - {fileID: 1189489180}
+  - {fileID: 1076330813}
+  - {fileID: 1238070844}
+  - {fileID: 1131423779}
 --- !u!61 &1132341711
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5262,8 +5327,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _points:
   - {fileID: 555692139}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1386215271}
+  - {fileID: 530895910}
+  - {fileID: 606011945}
+  - {fileID: 1916810850}
+  - {fileID: 1199660770}
+  - {fileID: 236368605}
+  - {fileID: 1034124034}
+  - {fileID: 1627700963}
+  - {fileID: 1235373677}
+  - {fileID: 370031976}
+  - {fileID: 422095458}
+  - {fileID: 217358158}
 --- !u!61 &1156685382
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5829,8 +5904,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _points:
   - {fileID: 346446553}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1637576453}
+  - {fileID: 2100754203}
+  - {fileID: 1763217152}
+  - {fileID: 1751135024}
+  - {fileID: 1394210073}
 --- !u!61 &1232688107
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6604,8 +6682,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _points:
   - {fileID: 1799635805}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 819835101}
+  - {fileID: 57608935}
+  - {fileID: 2099760751}
+  - {fileID: 637519805}
+  - {fileID: 1172233197}
+  - {fileID: 1033401810}
+  - {fileID: 1373749833}
+  - {fileID: 88169743}
+  - {fileID: 761726416}
+  - {fileID: 1412509479}
+  - {fileID: 921457430}
+  - {fileID: 295121711}
 --- !u!61 &1393599285
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7913,6 +8001,20 @@ MonoBehaviour:
   - {fileID: 1935907627}
   - {fileID: 1264713603}
   - {fileID: 1758994581}
+  - {fileID: 1753959021}
+  - {fileID: 180772740}
+  - {fileID: 1679355990}
+  - {fileID: 171007070}
+  - {fileID: 2029214605}
+  - {fileID: 531510231}
+  - {fileID: 1320963483}
+  - {fileID: 430613306}
+  - {fileID: 1922441448}
+  - {fileID: 227059430}
+  - {fileID: 1956932779}
+  - {fileID: 1149631047}
+  - {fileID: 1100467926}
+  - {fileID: 660328923}
 --- !u!61 &1752970024
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8560,6 +8662,24 @@ MonoBehaviour:
   - {fileID: 979487753}
   - {fileID: 1876778543}
   - {fileID: 821725157}
+  - {fileID: 175202582}
+  - {fileID: 967855691}
+  - {fileID: 829377009}
+  - {fileID: 526495259}
+  - {fileID: 761512500}
+  - {fileID: 102878930}
+  - {fileID: 470172883}
+  - {fileID: 461296789}
+  - {fileID: 783759158}
+  - {fileID: 1794014804}
+  - {fileID: 1007015883}
+  - {fileID: 1257235070}
+  - {fileID: 1926682995}
+  - {fileID: 2015744795}
+  - {fileID: 630878411}
+  - {fileID: 166079730}
+  - {fileID: 1167719441}
+  - {fileID: 105608487}
 --- !u!61 &1897218169
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9137,6 +9257,18 @@ MonoBehaviour:
   - {fileID: 742662581}
   - {fileID: 2051828668}
   - {fileID: 1177198055}
+  - {fileID: 632980700}
+  - {fileID: 1656054166}
+  - {fileID: 1117428814}
+  - {fileID: 1464946432}
+  - {fileID: 1753610666}
+  - {fileID: 1995204175}
+  - {fileID: 1193075298}
+  - {fileID: 69691800}
+  - {fileID: 1495188767}
+  - {fileID: 1901593402}
+  - {fileID: 634060412}
+  - {fileID: 96144362}
   _initialFallDelay: 2
   _initialRestoreDelay: 2
   _wholeStick: {fileID: 492293346}
