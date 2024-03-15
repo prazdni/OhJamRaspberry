@@ -35,8 +35,8 @@ public class CatController : MonoBehaviour
     void Start()
     {
         _force = null;
-        transform.localRotation = Quaternion.identity;
         transform.position = _initialPosition;
+        ResetTransforms();
 
         _catMovementController.SetState(CatMovementController.CatState.Hanging, null);
     }
@@ -56,15 +56,15 @@ public class CatController : MonoBehaviour
 
             if (Mathf.Abs(angle) <= _maxAngle)
             {
+                var rotation = new Quaternion { eulerAngles = new Vector3(0,0,angle) };
+                _bodyTransform.rotation = rotation;
+
                 if (dir.magnitude < _threshold)
                 {
                     _force = null;
                     _spriteRenderer.size = new Vector2(1, 1);
                     return;
                 }
-
-                var rotation = new Quaternion { eulerAngles = new Vector3(0,0,angle) };
-                _bodyTransform.rotation = rotation;
 
                 if (dir.magnitude <= _maxMagnitude)
                 {
@@ -123,9 +123,8 @@ public class CatController : MonoBehaviour
 
     public void Restart()
     {
-        transform.localRotation = Quaternion.identity;
-        _pawsTransform.localRotation = Quaternion.identity;
         transform.position = _initialPosition;
+        ResetTransforms();
 
         _catMovementController.SetState(state: CatMovementController.CatState.Hanging, info: null);
     }
@@ -166,10 +165,16 @@ public class CatController : MonoBehaviour
     void Hang(CommonStick commonStick)
     {
         transform.position = commonStick.GetClosestPoint(_pawsBox.position) + Vector2.down * 0.75f;
-        transform.localRotation = Quaternion.identity;
-        _pawsTransform.localRotation = Quaternion.identity;
+        ResetTransforms();
 
         _catMovementController.SetState(CatMovementController.CatState.Hanging, null);
         onStateChanged?.Invoke(CatMovementController.CatState.Hanging);
+    }
+
+    void ResetTransforms()
+    {
+        transform.localRotation = Quaternion.identity;
+        _bodyTransform.localRotation = Quaternion.identity;
+        _pawsTransform.localRotation = Quaternion.identity;
     }
 }
