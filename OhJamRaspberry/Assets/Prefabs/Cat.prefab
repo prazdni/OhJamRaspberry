@@ -113,6 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bodyTransform: {fileID: 4097019690298504045}
   _pawsTransform: {fileID: 4097019691251507673}
+  _pawsBox: {fileID: 3996737510822525159}
   _spriteRenderer: {fileID: 4097019692050326135}
   _catMovementController: {fileID: 4097019690298504044}
   _forceApply: 250
@@ -120,7 +121,7 @@ MonoBehaviour:
   _maxMagnitude: 1.5
   _initialPosition: {x: 0, y: 0}
   _maxAngle: 45
-  _overlapBox: {x: 1, y: 1}
+  _overlapBox: {x: 1.5, y: 1}
 --- !u!50 &4097019690415411662
 Rigidbody2D:
   serializedVersion: 4
@@ -249,11 +250,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4097019691251507678}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.012, y: 0.57, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 3996737510822525159}
   - {fileID: 4097019691857623239}
   - {fileID: 4097019691681725631}
   m_Father: {fileID: 4097019690415411656}
@@ -284,12 +286,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4097019691681725628}
   m_LocalRotation: {x: -0, y: -0, z: 0.21140563, w: 0.97739846}
-  m_LocalPosition: {x: 0.23200001, y: -0.099999994, z: 0}
+  m_LocalPosition: {x: 0.23200001, y: 0.48700005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4097019691251507673}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 24.409}
 --- !u!212 &4097019691681725630
 SpriteRenderer:
@@ -368,12 +370,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4097019691857623236}
   m_LocalRotation: {x: -0, y: -0, z: 0.53729963, w: 0.8433915}
-  m_LocalPosition: {x: -0.24, y: -0.120000005, z: 0}
+  m_LocalPosition: {x: -0.24, y: 0.467, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4097019691251507673}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 65}
 --- !u!212 &4097019691857623238
 SpriteRenderer:
@@ -511,3 +513,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &4917643017674747207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3996737510822525159}
+  m_Layer: 0
+  m_Name: PawsBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3996737510822525159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4917643017674747207}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4097019691251507673}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

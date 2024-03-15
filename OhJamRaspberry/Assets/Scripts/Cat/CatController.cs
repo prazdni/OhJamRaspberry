@@ -11,6 +11,8 @@ public class CatController : MonoBehaviour
     [SerializeField]
     Transform _pawsTransform;
     [SerializeField]
+    Transform _pawsBox;
+    [SerializeField]
     SpriteRenderer _spriteRenderer;
     [SerializeField]
     CatMovementController _catMovementController;
@@ -91,7 +93,10 @@ public class CatController : MonoBehaviour
     {
         if (_catMovementController.catState == CatMovementController.CatState.Flying)
         {
-            Collider2D[] contacts = Physics2D.OverlapBoxAll(_pawsTransform.position, new Vector2(1, 1), 0);
+            Collider2D[] contacts = Physics2D.OverlapBoxAll(_pawsBox.position,
+                _overlapBox,
+                _pawsTransform.rotation.eulerAngles.z);
+
             foreach (Collider2D contact in contacts)
             {
                 var commonStick = contact.transform.GetComponent<CommonStick>();
@@ -119,7 +124,9 @@ public class CatController : MonoBehaviour
     public void Restart()
     {
         transform.localRotation = Quaternion.identity;
+        _pawsTransform.localRotation = Quaternion.identity;
         transform.position = _initialPosition;
+
         _catMovementController.SetState(state: CatMovementController.CatState.Hanging, info: null);
     }
 
@@ -143,6 +150,7 @@ public class CatController : MonoBehaviour
             {
                 force = _force.Value
             });
+            _pawsTransform.rotation = _bodyTransform.rotation;
 
             _force = null;
             _guid = null;
@@ -157,8 +165,9 @@ public class CatController : MonoBehaviour
 
     void Hang(CommonStick commonStick)
     {
-        transform.position = commonStick.GetClosestPoint(_pawsTransform.position) + Vector2.down * 0.5f;
+        transform.position = commonStick.GetClosestPoint(_pawsBox.position) + Vector2.down * 0.75f;
         transform.localRotation = Quaternion.identity;
+        _pawsTransform.localRotation = Quaternion.identity;
 
         _catMovementController.SetState(CatMovementController.CatState.Hanging, null);
         onStateChanged?.Invoke(CatMovementController.CatState.Hanging);
