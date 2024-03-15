@@ -24,6 +24,8 @@ public class CatController : MonoBehaviour
     Vector2 _initialPosition;
     [SerializeField]
     float _maxAngle;
+    [SerializeField]
+    Vector2 _overlapBox;
 
     Vector2? _force;
     Guid? _guid;

@@ -120,6 +120,7 @@ MonoBehaviour:
   _maxMagnitude: 1.5
   _initialPosition: {x: 0, y: 0}
   _maxAngle: 45
+  _overlapBox: {x: 1, y: 1}
 --- !u!50 &4097019690415411662
 Rigidbody2D:
   serializedVersion: 4
