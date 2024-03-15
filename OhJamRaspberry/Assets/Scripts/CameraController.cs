@@ -18,7 +18,7 @@ public class CameraController : MonoBehaviour
 
     void Start()
     {
-        _currentDelay = _flyingDelay;
+        _currentDelay = _pointingDelay;
 
         _catController = FindObjectOfType<CatController>();
         transform.position = new Vector3(0, _catController.transform.position.y, -10);
@@ -39,7 +39,6 @@ public class CameraController : MonoBehaviour
         }
 
         var target = new Vector3(0, _catController.transform.position.y +_offsetY, -10);
-        //transform.position = Vector3.Slerp(transform.position, target, _speed * Time.deltaTime);
         transform.position = Vector3.SmoothDamp(transform.position, target, ref _velocity, _speed);
     }
 
