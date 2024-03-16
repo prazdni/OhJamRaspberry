@@ -3626,7 +3626,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.04810226, y: 0.09726524}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3637,7 +3637,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1.0962045, y: 0.66334915}
   m_EdgeRadius: 0
 --- !u!1 &342014858
 GameObject:
@@ -4211,7 +4211,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.13049811, y: 0.179577}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4222,7 +4222,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1.2609962, y: 0.609154}
   m_EdgeRadius: 0
 --- !u!1001 &388570995
 PrefabInstance:
@@ -4468,7 +4468,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.18785667}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4479,7 +4479,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1, y: 1.0071144}
   m_EdgeRadius: 0
 --- !u!4 &393334895
 Transform:
@@ -4723,7 +4723,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.24186754}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4734,7 +4734,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1, y: 1.0903444}
   m_EdgeRadius: 0
 --- !u!1 &407255803
 GameObject:
@@ -6019,7 +6019,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.057406098, y: 0.12012577}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6030,7 +6030,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1.1148119, y: 0.7361965}
   m_EdgeRadius: 0
 --- !u!1 &497317082
 GameObject:
@@ -6723,7 +6723,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.18384826, y: 0.19217873}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6734,7 +6734,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1.3676964, y: 0.69011307}
   m_EdgeRadius: 0
 --- !u!1 &531797483
 GameObject:
@@ -9399,7 +9399,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.036376566, y: 0.118040085}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9410,7 +9410,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1.0727532, y: 0.69177246}
   m_EdgeRadius: 0
 --- !u!1 &754500072
 GameObject:
@@ -10068,7 +10068,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.2283957}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -10079,7 +10079,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1, y: 0.7067914}
   m_EdgeRadius: 0
 --- !u!1 &801781046
 GameObject:
@@ -10644,7 +10644,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.06323469, y: 0.015954971}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -10655,7 +10655,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1.1264693, y: 0.721714}
   m_EdgeRadius: 0
 --- !u!1 &829377008
 GameObject:
@@ -10895,7 +10895,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.3135605}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -10906,7 +10906,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1, y: 0.877121}
   m_EdgeRadius: 0
 --- !u!4 &843419587
 Transform:
@@ -11119,7 +11119,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.19572735}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -11130,7 +11130,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1, y: 1.2045994}
   m_EdgeRadius: 0
 --- !u!1 &858256810
 GameObject:
@@ -11381,7 +11381,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.17442751}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -11392,7 +11392,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1, y: 1.1322622}
   m_EdgeRadius: 0
 --- !u!1 &884360830
 GameObject:
@@ -18532,7 +18532,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.4926721, y: 0.20555687}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -18543,7 +18543,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1.9853442, y: 0.661129}
   m_EdgeRadius: 0
 --- !u!1 &1496529894
 GameObject:
@@ -19098,7 +19098,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.047278136, y: 0.15546036}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -19109,7 +19109,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1.0945561, y: 0.5609207}
   m_EdgeRadius: 0
 --- !u!1 &1562468682
 GameObject:
@@ -19630,7 +19630,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.22873974}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -19641,7 +19641,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1, y: 0.7074795}
   m_EdgeRadius: 0
 --- !u!1 &1616720274
 GameObject:
@@ -21274,7 +21274,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.488868, y: 0.18961143}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -21285,7 +21285,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1.977736, y: 0.62922287}
   m_EdgeRadius: 0
 --- !u!1 &1732010658
 GameObject:
@@ -23016,7 +23016,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.21143723}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -23027,7 +23027,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1, y: 0.67287445}
   m_EdgeRadius: 0
 --- !u!4 &1861543555
 Transform:
@@ -23426,7 +23426,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.03595157, y: -0.055353165}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -23437,7 +23437,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1.0719031, y: 0.74502945}
   m_EdgeRadius: 0
 --- !u!1 &1874702827
 GameObject:
@@ -23977,7 +23977,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.26731896, y: -0.056794286}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -23988,7 +23988,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1.5346379, y: 1.1814969}
   m_EdgeRadius: 0
 --- !u!1 &1901524106
 GameObject:
@@ -25526,7 +25526,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.39850616}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -25537,7 +25537,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1, y: 1.0470123}
   m_EdgeRadius: 0
 --- !u!4 &2013456162
 Transform:
@@ -25697,7 +25697,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.09587036, y: -0.046508074}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -25708,7 +25708,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1.1917406, y: 0.9072156}
   m_EdgeRadius: 0
 --- !u!1 &2026481631
 GameObject:
@@ -26849,7 +26849,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.056143045, y: 0.073367596}
   m_SpriteTilingProperty:
     border: {x: 0.25, y: 0, z: 0.25, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -26860,7 +26860,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1.1122861, y: 0.73868275}
   m_EdgeRadius: 0
 --- !u!4 &95760545637020044
 Transform:

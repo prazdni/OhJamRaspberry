@@ -89,7 +89,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4097019690415411663}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -111,7 +111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f316e5a8791de4018848b2f6e51c4774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _collider2D: {fileID: 0}
   _bodyTransform: {fileID: 4097019690298504045}
   _pawsTransform: {fileID: 4097019691251507673}
   _pawsBox: {fileID: 3996737510822525159}
@@ -122,7 +121,6 @@ MonoBehaviour:
   _maxMagnitude: 1.5
   _initialPosition: {x: 0, y: 0}
   _maxAngle: 45
-  _overlapBox: {x: 0.5, y: 1}
   _radius: 0.5
 --- !u!50 &4097019690415411662
 Rigidbody2D:
@@ -184,7 +182,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4097019691251507678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -387,7 +385,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4097019692050326132}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.65, z: -1}
+  m_LocalPosition: {x: 0, y: 0.65, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
