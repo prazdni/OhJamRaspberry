@@ -9,8 +9,8 @@ public class LevelController : MonoBehaviour
         _catController = FindObjectOfType<CatController>();
     }
 
-    void OnMouseUp()
+    void OnMouseDown()
     {
-        _catController.SetLevelMouseUp();
+        _catController.SetHanging();
     }
 }

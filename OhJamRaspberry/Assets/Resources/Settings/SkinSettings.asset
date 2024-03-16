@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9d1c2988844aa3b363c311a8c01512, type: 3}
+  m_Name: SkinSettings
+  m_EditorClassIdentifier: 
+  defaultSkin:
+    id: 1
+    body: {fileID: 21300000, guid: 2e5de2f38ae554338b9fdd661f95da35, type: 3}
+    leftPaw: {fileID: 21300000, guid: 559bd48f0fb5d994f8cdeb32eb0d8fba, type: 3}
+    rightPaw: {fileID: 21300000, guid: b99b2a518d4ac204d9e7e9a308b6c3fa, type: 3}
+  buySkins:
+  - id: 2
+    body: {fileID: 21300000, guid: d44196783ffcd14478d0b4be2aa434c3, type: 3}
+    leftPaw: {fileID: 21300000, guid: 3963c5270ba76e645a5063e4d537251a, type: 3}
+    rightPaw: {fileID: 21300000, guid: 8bdfb2c4570cff846b7d348778da647a, type: 3}
+    isBought: 0
+    raspberriesCount: 3
+  - id: 3
+    body: {fileID: 21300000, guid: d44196783ffcd14478d0b4be2aa434c3, type: 3}
+    leftPaw: {fileID: 21300000, guid: 3963c5270ba76e645a5063e4d537251a, type: 3}
+    rightPaw: {fileID: 21300000, guid: 8bdfb2c4570cff846b7d348778da647a, type: 3}
+    isBought: 0
+    raspberriesCount: 5
+  - id: 4
+    body: {fileID: 21300000, guid: d44196783ffcd14478d0b4be2aa434c3, type: 3}
+    leftPaw: {fileID: 21300000, guid: 3963c5270ba76e645a5063e4d537251a, type: 3}
+    rightPaw: {fileID: 21300000, guid: 8bdfb2c4570cff846b7d348778da647a, type: 3}
+    isBought: 0
+    raspberriesCount: 7

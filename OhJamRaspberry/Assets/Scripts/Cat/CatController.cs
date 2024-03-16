@@ -32,6 +32,8 @@ public class CatController : MonoBehaviour
     Vector2? _force;
     Guid? _guid;
 
+    bool _isDown;
+
     void Start()
     {
         _force = null;
@@ -45,6 +47,12 @@ public class CatController : MonoBehaviour
     {
         if (_catMovementController.catState == CatMovementController.CatState.Hanging)
         {
+            if (_isDown)
+            {
+                _isDown = false;
+                return;
+            }
+
             var mousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
             Vector3 worldPoint = Camera.main.ScreenToWorldPoint(mousePosition);
             Vector3 catPosition = transform.position;
@@ -75,21 +83,33 @@ public class CatController : MonoBehaviour
         }
     }
 
+    void OnMouseDown()
+    {
+        switch (_catMovementController.catState)
+        {
+            case CatMovementController.CatState.Flying:
+                SetHanging();
+                break;
+        }
+    }
+
     void OnMouseUp()
     {
         switch (_catMovementController.catState)
         {
             case CatMovementController.CatState.Hanging:
-                SendFly();
-                break;
+                if (_isDown)
+                {
+                    _isDown = false;
+                    return;
+                }
 
-            case CatMovementController.CatState.Flying:
-                SetLevelMouseUp();
+                SendFly();
                 break;
         }
     }
 
-    public void SetLevelMouseUp()
+    public void SetHanging()
     {
         if (_catMovementController.catState == CatMovementController.CatState.Flying)
         {
@@ -164,6 +184,8 @@ public class CatController : MonoBehaviour
 
     void Hang(CommonStick commonStick)
     {
+        _isDown = true;
+
         transform.position = commonStick.GetClosestPoint(_pawsBox.position) + Vector2.down * 0.75f;
         ResetTransforms();
 

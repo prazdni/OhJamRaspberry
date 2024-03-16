@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class RaspberryManager : MonoBehaviour
 {
-    public event Action onRaspberryAdded;
+    public event Action onRaspberriesChanged;
 
-    public int raspberriesCount => _raspberries.Count;
+    public int raspberriesCount => _raspberries.Count - _consumedRaspberriesCount;
 
     HashSet<string> _raspberries;
+    int _consumedRaspberriesCount;
 
     void Awake()
     {
@@ -34,6 +35,12 @@ public class RaspberryManager : MonoBehaviour
     public void AddRaspberry(string id)
     {
         _raspberries.Add(id);
-        onRaspberryAdded?.Invoke();
+        onRaspberriesChanged?.Invoke();
+    }
+
+    public void ConsumeRaspberries(int amount)
+    {
+        _consumedRaspberriesCount += amount;
+        onRaspberriesChanged?.Invoke();
     }
 }
