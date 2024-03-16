@@ -3073,7 +3073,6 @@ MonoBehaviour:
   _flyingDelay: 1.5
   _topPoint: {fileID: 1858862588}
   _bottomPoint: {fileID: 780664158}
-  _thresholdY: 5
 --- !u!1 &526495258
 GameObject:
   m_ObjectHideFlags: 0
