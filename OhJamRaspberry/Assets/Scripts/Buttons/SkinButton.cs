@@ -9,7 +9,7 @@ public class SkinButton : MonoBehaviour
     [SerializeField]
     GameObject _chosen;
     [SerializeField]
-    GameObject _notAvailable;
+    GameObject _available;
     [SerializeField]
     TextMeshProUGUI _raspberryCount;
 
@@ -46,12 +46,12 @@ public class SkinButton : MonoBehaviour
 
     void SetAvailable()
     {
-        _notAvailable.SetActive(false);
+        _available.SetActive(true);
         _raspberryCount.text = "";
         if (_skin is SkinSettings.BuySkin buySkin)
         {
             _raspberryCount.text = buySkin.isBought ? "" : buySkin.raspberriesCount.ToString();
-            _notAvailable.SetActive(!buySkin.isBought);
+            _available.SetActive(buySkin.isBought);
         }
     }
 }
