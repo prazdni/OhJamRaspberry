@@ -6,6 +6,8 @@ public class CatController : MonoBehaviour
 {
     public event Action<CatMovementController.CatState> onStateChanged;
 
+    public Guid? id => _id;
+
     [SerializeField]
     Transform _bodyTransform;
     [SerializeField]
@@ -30,7 +32,7 @@ public class CatController : MonoBehaviour
     Vector2 _overlapBox;
 
     Vector2? _force;
-    Guid? _guid;
+    Guid? _id;
 
     bool _isDown;
 
@@ -122,20 +124,25 @@ public class CatController : MonoBehaviour
                 var commonStick = contact.transform.GetComponent<CommonStick>();
                 if (commonStick != null)
                 {
-                    if (commonStick is BreakableStick breakableStick)
+                    switch (commonStick)
                     {
-                        if (breakableStick.canBeHanging)
-                        {
-                            _guid = breakableStick.SetHanging();
-                            Hang(breakableStick);
-                        }
-                    }
-                    else
-                    {
-                        Hang(commonStick);
-                    }
+                        case BreakableStick breakableStick:
+                            if (breakableStick.canBeHanging)
+                            {
+                                _id = breakableStick.SetHanging();
+                                Hang(breakableStick);
+                            }
+                            break;
 
-                    break;
+                        case MovableStick movableStick:
+                            _id = movableStick.SetHanging();
+                            Hang(movableStick);
+                            break;
+
+                        default:
+                            Hang(commonStick);
+                            break;
+                    }
                 }
             }
         }
@@ -151,7 +158,7 @@ public class CatController : MonoBehaviour
 
     public void RemoveFromStick(Guid guid)
     {
-        if (_guid == guid)
+        if (_id == guid)
         {
             _force = Vector2.zero;
             SendFly();
@@ -172,7 +179,7 @@ public class CatController : MonoBehaviour
             _pawsTransform.rotation = _bodyTransform.rotation;
 
             _force = null;
-            _guid = null;
+            _id = null;
 
             onStateChanged?.Invoke(CatMovementController.CatState.Flying);
         }
@@ -186,7 +193,8 @@ public class CatController : MonoBehaviour
     {
         _isDown = true;
 
-        transform.position = commonStick.GetClosestPoint(_pawsBox.position) + Vector2.down * 0.75f;
+        Transform closestPoint = commonStick.GetClosestPoint(_pawsBox.position);
+        SetPosition(closestPoint);
         ResetTransforms();
 
         _catMovementController.SetState(CatMovementController.CatState.Hanging, null);
@@ -198,5 +206,11 @@ public class CatController : MonoBehaviour
         transform.localRotation = Quaternion.identity;
         _bodyTransform.localRotation = Quaternion.identity;
         _pawsTransform.localRotation = Quaternion.identity;
+    }
+
+    public void SetPosition(Transform closestPoint)
+    {
+        Vector2 closestPointPosition = (Vector2)closestPoint.position + Vector2.down * 0.75f;
+        transform.position = closestPointPosition;
     }
 }

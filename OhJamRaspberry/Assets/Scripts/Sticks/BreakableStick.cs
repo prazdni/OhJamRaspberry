@@ -24,7 +24,7 @@ namespace Sticks
         bool _dirtyFall;
         bool _dirtyRestore;
 
-        void Awake()
+        void Start()
         {
             _catController = FindObjectOfType<CatController>();
             _wholeStick.SetActive(true);
