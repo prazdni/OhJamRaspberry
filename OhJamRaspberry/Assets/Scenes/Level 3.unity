@@ -6296,8 +6296,8 @@ MonoBehaviour:
   _speed: 1
   _pointingDelay: 0.5
   _flyingDelay: 1.5
-  _topPoint: {fileID: 0}
-  _bottomPoint: {fileID: 0}
+  _topPoint: {fileID: 784699275}
+  _bottomPoint: {fileID: 1588175459}
 --- !u!1 &526495258
 GameObject:
   m_ObjectHideFlags: 0
