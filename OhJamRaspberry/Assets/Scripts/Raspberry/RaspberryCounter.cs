@@ -14,13 +14,13 @@ public class RaspberryCounter : MonoBehaviour
         SetRaspberry();
 
         if (_raspberryManager)
-            _raspberryManager.onRaspberryAdded += SetRaspberry;
+            _raspberryManager.onRaspberriesChanged += SetRaspberry;
     }
 
     void OnDestroy()
     {
         if (_raspberryManager)
-            _raspberryManager.onRaspberryAdded -= SetRaspberry;
+            _raspberryManager.onRaspberriesChanged -= SetRaspberry;
     }
 
     void SetRaspberry()

@@ -19,4 +19,9 @@ public class StartContinueButton : MonoBehaviour
         _continueText.SetActive(_gameManager.hasLastLevel);
         _button.onClick.AddListener(_gameManager.StartFromLastLevel);
     }
+
+    public void OnDestroy()
+    {
+        _button.onClick.RemoveListener(_gameManager.StartFromLastLevel);
+    }
 }

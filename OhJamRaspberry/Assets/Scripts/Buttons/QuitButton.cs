@@ -15,6 +15,11 @@ public class QuitButton : MonoBehaviour
         _button.onClick.AddListener(Quit);
     }
 
+    void OnDestroy()
+    {
+        _button.onClick.RemoveListener(Quit);
+    }
+
     void Quit()
     {
         if (_gameManager)
