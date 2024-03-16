@@ -29,7 +29,7 @@ public class CatController : MonoBehaviour
     [SerializeField]
     float _maxAngle;
     [SerializeField]
-    Vector2 _overlapBox;
+    float _radius;
 
     Vector2? _force;
     Guid? _id;
@@ -115,9 +115,7 @@ public class CatController : MonoBehaviour
     {
         if (_catMovementController.catState == CatMovementController.CatState.Flying)
         {
-            Collider2D[] contacts = Physics2D.OverlapBoxAll(_pawsBox.position,
-                _overlapBox,
-                _pawsTransform.rotation.eulerAngles.z);
+            Collider2D[] contacts = Physics2D.OverlapCircleAll(_pawsBox.position, _radius);
 
             foreach (Collider2D contact in contacts)
             {
