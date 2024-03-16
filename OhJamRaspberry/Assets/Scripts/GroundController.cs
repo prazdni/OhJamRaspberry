@@ -4,7 +4,7 @@ public class GroundController : MonoBehaviour
 {
     CatController _catController;
 
-    void Awake()
+    void Start()
     {
         _catController = FindObjectOfType<CatController>();
     }
