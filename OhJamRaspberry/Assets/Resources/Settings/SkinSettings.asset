@@ -14,25 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSkin:
     id: 1
-    body: {fileID: 21300000, guid: 2e5de2f38ae554338b9fdd661f95da35, type: 3}
-    leftPaw: {fileID: 21300000, guid: 559bd48f0fb5d994f8cdeb32eb0d8fba, type: 3}
-    rightPaw: {fileID: 21300000, guid: b99b2a518d4ac204d9e7e9a308b6c3fa, type: 3}
+    sample: {fileID: 21300000, guid: 74039f022069444f59428ad0f15c51e6, type: 3}
+    body: {fileID: 21300000, guid: 3d361e41303824962b236d27632cddb9, type: 3}
+    leftPaw: {fileID: 21300000, guid: 8256ebe47270d461d9dec78bc9aa9504, type: 3}
+    rightPaw: {fileID: 21300000, guid: 1b576656626dd4af9b13f31171906932, type: 3}
   buySkins:
   - id: 2
-    body: {fileID: 21300000, guid: d44196783ffcd14478d0b4be2aa434c3, type: 3}
-    leftPaw: {fileID: 21300000, guid: 3963c5270ba76e645a5063e4d537251a, type: 3}
-    rightPaw: {fileID: 21300000, guid: 8bdfb2c4570cff846b7d348778da647a, type: 3}
+    sample: {fileID: 21300000, guid: cbf1cc0c67f024f14a67c06f9fd28d67, type: 3}
+    body: {fileID: 21300000, guid: e16e14d269cba4709a10808004dca947, type: 3}
+    leftPaw: {fileID: 21300000, guid: 6842c1b148f934042a61886a80f9e781, type: 3}
+    rightPaw: {fileID: 21300000, guid: 6842c1b148f934042a61886a80f9e781, type: 3}
     isBought: 0
     raspberriesCount: 3
   - id: 3
-    body: {fileID: 21300000, guid: d44196783ffcd14478d0b4be2aa434c3, type: 3}
-    leftPaw: {fileID: 21300000, guid: 3963c5270ba76e645a5063e4d537251a, type: 3}
-    rightPaw: {fileID: 21300000, guid: 8bdfb2c4570cff846b7d348778da647a, type: 3}
+    sample: {fileID: 21300000, guid: 994b53a2be72b4474b96d9ac2023c615, type: 3}
+    body: {fileID: 21300000, guid: ee0be9c86bd63487ca80726d62508745, type: 3}
+    leftPaw: {fileID: 21300000, guid: 847186a3b816643e0a30bd2efbcaf273, type: 3}
+    rightPaw: {fileID: 21300000, guid: 847186a3b816643e0a30bd2efbcaf273, type: 3}
     isBought: 0
     raspberriesCount: 5
   - id: 4
-    body: {fileID: 21300000, guid: d44196783ffcd14478d0b4be2aa434c3, type: 3}
-    leftPaw: {fileID: 21300000, guid: 3963c5270ba76e645a5063e4d537251a, type: 3}
-    rightPaw: {fileID: 21300000, guid: 8bdfb2c4570cff846b7d348778da647a, type: 3}
+    sample: {fileID: 21300000, guid: e319501fbb33a4a16aeaf2ecde175dd6, type: 3}
+    body: {fileID: 21300000, guid: 68466d550c3f84828aacb5926123d45c, type: 3}
+    leftPaw: {fileID: 21300000, guid: 8e4edec9b4738463ba5badbdbc2ff846, type: 3}
+    rightPaw: {fileID: 21300000, guid: 5290b58d3e37d4280aa9f684d7252e1e, type: 3}
     isBought: 0
     raspberriesCount: 7
