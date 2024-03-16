@@ -12,7 +12,7 @@ public class GameFinished : MonoBehaviour
         _theEnd.SetActive(false);
     }
 
-    void OnTriggerExit(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         var catMovementController = other.GetComponent<CatMovementController>();
         if (catMovementController)
