@@ -32,7 +32,7 @@ public class CatMovementController : MonoBehaviour
 
             case CatState.Flying:
                 _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
-                _rigidbody2D.AddForce(info.force);
+                _rigidbody2D.AddForce(info.force, ForceMode2D.Impulse);
                 break;
         }
     }

@@ -3,6 +3,8 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [SerializeField]
+    Vector3 _initialPosition;
+    [SerializeField]
     float _offsetY;
     [SerializeField]
     float _speed;
@@ -21,7 +23,7 @@ public class CameraController : MonoBehaviour
         _currentDelay = _pointingDelay;
 
         _catController = FindObjectOfType<CatController>();
-        transform.position = new Vector3(0, _catController.transform.position.y, -10);
+        transform.position = _initialPosition;
         _catController.onStateChanged += SetDelay;
     }
 
