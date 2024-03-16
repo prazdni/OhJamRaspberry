@@ -8,6 +8,7 @@ public class SkinSettings : ScriptableObject
     public class Skin
     {
         public string id;
+        public Sprite sample;
         public Sprite body;
         public Sprite leftPaw;
         public Sprite rightPaw;
