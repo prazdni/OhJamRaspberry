@@ -6685,26 +6685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb28e57ab15475c9f26a211abfdfb2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _points:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  _points: []
   _movableRoot: {fileID: 529158361}
   _leftPoint: {fileID: 1922186946}
   _rightPoint: {fileID: 1859977892}
@@ -19060,26 +19041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb28e57ab15475c9f26a211abfdfb2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _points:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  _points: []
   _movableRoot: {fileID: 1557605813}
   _leftPoint: {fileID: 744747462}
   _rightPoint: {fileID: 2051260512}
@@ -25793,7 +25755,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2033049991}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 53.5, z: 0.1}
+  m_LocalPosition: {x: 0, y: 29, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
