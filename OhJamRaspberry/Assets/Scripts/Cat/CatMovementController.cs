@@ -36,4 +36,10 @@ public class CatMovementController : MonoBehaviour
                 break;
         }
     }
+
+    public void FinishGame()
+    {
+        _rigidbody2D.AddForce(Vector2.up, ForceMode2D.Impulse);
+        _rigidbody2D.gravityScale = 0;
+    }
 }
