@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f316e5a8791de4018848b2f6e51c4774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _collider2D: {fileID: 0}
   _bodyTransform: {fileID: 4097019690298504045}
   _pawsTransform: {fileID: 4097019691251507673}
   _pawsBox: {fileID: 3996737510822525159}
@@ -122,6 +123,7 @@ MonoBehaviour:
   _initialPosition: {x: 0, y: 0}
   _maxAngle: 45
   _overlapBox: {x: 0.5, y: 1}
+  _radius: 0.5
 --- !u!50 &4097019690415411662
 Rigidbody2D:
   serializedVersion: 4
