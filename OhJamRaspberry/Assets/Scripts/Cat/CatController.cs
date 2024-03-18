@@ -9,6 +9,8 @@ public class CatController : MonoBehaviour
     public Guid? id => _id;
 
     [SerializeField]
+    Collider2D _collider2D;
+    [SerializeField]
     Transform _bodyTransform;
     [SerializeField]
     Transform _pawsTransform;
@@ -35,6 +37,7 @@ public class CatController : MonoBehaviour
     Guid? _id;
 
     bool _isDown;
+    bool _isDownCat;
 
     void Start()
     {
@@ -45,57 +48,73 @@ public class CatController : MonoBehaviour
         _catMovementController.SetState(CatMovementController.CatState.Hanging, null);
     }
 
-    void OnMouseDrag()
+    public void MouseDrag()
     {
-        if (_catMovementController.catState == CatMovementController.CatState.Hanging)
+        if (_isDownCat)
         {
-            if (_isDown)
+            if (_catMovementController.catState == CatMovementController.CatState.Hanging)
             {
-                _isDown = false;
-                return;
-            }
-
-            var mousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-            Vector3 worldPoint = Camera.main.ScreenToWorldPoint(mousePosition);
-            Vector3 catPosition = transform.position;
-            Vector2 dir = (catPosition - worldPoint);
-
-            Vector3 direction = (catPosition - worldPoint).normalized;
-            float angle = Mathf.Atan2(direction.y,direction.x)*Mathf.Rad2Deg;
-            angle -= 90;
-
-            if (Mathf.Abs(angle) <= _maxAngle)
-            {
-                var rotation = new Quaternion { eulerAngles = new Vector3(0,0,angle) };
-                _bodyTransform.rotation = rotation;
-
-                if (dir.magnitude < _threshold)
+                if (_isDown)
                 {
-                    _force = null;
-                    _spriteRenderer.size = new Vector2(1, 1);
+                    _isDown = false;
                     return;
                 }
 
-                if (dir.magnitude <= _maxMagnitude)
+                var mousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+                Vector3 worldPoint = Camera.main.ScreenToWorldPoint(mousePosition);
+                Vector3 catPosition = transform.position;
+                Vector2 dir = (catPosition - worldPoint);
+
+                Vector3 direction = (catPosition - worldPoint).normalized;
+                float angle = Mathf.Atan2(direction.y,direction.x)*Mathf.Rad2Deg;
+                angle -= 90;
+
+                if (Mathf.Abs(angle) <= _maxAngle)
                 {
-                    _force = dir * _forceApply;
-                    _spriteRenderer.size = new Vector2(_spriteRenderer.size.x, dir.magnitude + 1);
+                    var rotation = new Quaternion { eulerAngles = new Vector3(0,0,angle) };
+                    _bodyTransform.rotation = rotation;
+
+                    if (dir.magnitude < _threshold)
+                    {
+                        _force = null;
+                        _spriteRenderer.size = new Vector2(1, 1);
+                        return;
+                    }
+
+                    if (dir.magnitude <= _maxMagnitude)
+                    {
+                        _force = dir * _forceApply;
+                        _spriteRenderer.size = new Vector2(_spriteRenderer.size.x, dir.magnitude + 1);
+                    }
                 }
             }
         }
     }
 
-    void OnMouseDown()
+    public void MouseDown()
     {
         switch (_catMovementController.catState)
         {
+            case CatMovementController.CatState.Hanging:
+                Vector3 point = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                RaycastHit2D[] raycastHits2D = Physics2D.RaycastAll(point, Vector2.zero);
+                foreach (RaycastHit2D raycastHit2D in raycastHits2D)
+                {
+                    if (raycastHit2D.collider == _collider2D)
+                    {
+                        _isDownCat = true;
+                        break;
+                    }
+                }
+                break;
+
             case CatMovementController.CatState.Flying:
                 SetHanging();
                 break;
         }
     }
 
-    void OnMouseUp()
+    public void MouseUp()
     {
         switch (_catMovementController.catState)
         {
@@ -109,6 +128,9 @@ public class CatController : MonoBehaviour
                 SendFly();
                 break;
         }
+
+        _isDown = false;
+        _isDownCat = false;
     }
 
     public void SetHanging()

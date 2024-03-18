@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 4097019690415411658}
   - component: {fileID: 4097019690415411662}
   - component: {fileID: 7567011129803397461}
+  - component: {fileID: 1483690536701966840}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Untagged
@@ -111,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f316e5a8791de4018848b2f6e51c4774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _collider2D: {fileID: 4097019690298504047}
   _bodyTransform: {fileID: 4097019690298504045}
   _pawsTransform: {fileID: 4097019691251507673}
   _pawsBox: {fileID: 3996737510822525159}
@@ -158,6 +160,18 @@ MonoBehaviour:
   _body: {fileID: 4097019692050326135}
   _leftPaw: {fileID: 4097019691857623238}
   _rightPaw: {fileID: 4097019691681725630}
+--- !u!114 &1483690536701966840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4097019690415411663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6491184b58ed453c8677998a92c0699, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4097019691251507678
 GameObject:
   m_ObjectHideFlags: 0
